@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 
 import './App.css';
 import TaskList from './components/TaskList';
+import BackgroundChanger from './components/BackgroundChanger';
 
 function App() {
-  const [personName, setPersonName] = useState<string>("");
+  const [personName, setPersonName] = useState<string>();
 
   useEffect(() => {
     let insertedName: string | null = null;
@@ -16,7 +17,7 @@ function App() {
     setPersonName(insertedName);
 
     return () => {
-      setPersonName("");
+      setPersonName(undefined);
       localStorage.removeItem('pessoa');
     };
   }, []);
@@ -28,6 +29,7 @@ function App() {
           <h1>{personName}, there's your task list!</h1>
         </div>
         <TaskList />
+        <BackgroundChanger />
       </>
     )
 }
