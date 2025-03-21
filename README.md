@@ -1,28 +1,34 @@
-# Web Development Exercise (PDF 2)
+# 📚 Web Development Exercise (PDF 2)
 A project focused to complete Web Development's exercises of React, training and substantiating React fundamentals.
 
-# Description
+# 📜 Description 
 It consists in a Basic SPA (Single Page Application) that includes:
 - Prompt your name and save it in your local storage.
 
-![GIF showing name input and localStorage data storage](public/inputNaming.gif)
+<img src="public/inputNaming.gif" width="750"></img>
 
 - Track tasks by user text input.
 
-![GIF showing task input](public/taskInput.gif)
+<img src="public/taskInput.gif" width="750"></img>
 
 - Change background color by radio buttons.
 
-![GIF showing background switch by radio buttons](public/backgroundColorSwitch.gif)
+<img src="public/backgroundColorSwitch.gif" width="750"></img>
 
-# Installation
+# ⚙️ Installation
 > Node version >= 20.1 and npm version >= 8.19.4 required
 
+First, it's necessary to download project locally:
+```sh
+$ git clone https://github.com/yandevv/exercicioWebPDF2.git
+```
+
+Lastly, you it's needed to isntall node dependencies:
 ```sh
 $ npm install
 ```
 
-# Usage
+# 🛠️ Usage
 It's possible to use the project in development environment and production environment.
 
 **Development:**
