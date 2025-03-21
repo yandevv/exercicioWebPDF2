@@ -1,54 +1,40 @@
-# React + TypeScript + Vite
+# Web Development Exercise (PDF 2)
+A project focused to complete Web Development's exercises of React, training and substantiating React fundamentals.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
+It consists in a Basic SPA (Single Page Application) that includes:
+- Prompt your name and save it in your local storage.
 
-Currently, two official plugins are available:
+![GIF showing name input and localStorage data storage](public/inputNaming.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Track tasks by user text input.
 
-## Expanding the ESLint configuration
+![GIF showing task input](public/taskInput.gif)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Change background color by radio buttons.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+![GIF showing background switch by radio buttons](public/backgroundColorSwitch.gif)
+
+# Installation
+> Node version >= 20.1 and npm version >= 8.19.4 required
+
+```sh
+$ npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Usage
+It's possible to use the project in development environment and production environment.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+**Development:**
+```sh
+$ npm run dev
 ```
+
+It you run the project in localhost with port **5173**.
+
+**Production:**
+```sh
+$ npm run build && npm run preview
+```
+
+It you run the project in localhost with port **4173**.
